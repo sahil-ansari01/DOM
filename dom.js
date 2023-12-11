@@ -29,8 +29,18 @@ header.style.border = 'solid 3px #000';
 
 // GetElementByClassName
 
-const addItems = document.getElementById('addItems');
-addItems.style.fontWeight = "900";
-addItems.style.color = 'green';
-// const items = document.getElementsByClassName('list-group-item');
-// console.log(items);
+// const addItems = document.getElementById('addItems');
+// addItems.style.fontWeight = "900";
+// addItems.style.color = 'green';
+
+const items = document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[1]);
+items[1].textContent = 'Hello 2';
+items[1].style.fontWeight = 'bold';
+items[1].style.backgroundColor = 'yellow';
+items[2].style.background = 'green';
+
+for (let i = 0; i < items.length; i++) {
+    items[i].style.fontWeight = 'bold';
+}
