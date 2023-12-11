@@ -63,26 +63,26 @@
 
 // querySelector
 
-const header = document.querySelector('#main-header');
-header.style.borderBottom = 'solid 4px #ccc';
+// const header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 4px #ccc';
 
-const input = document.querySelector('input');
-input.value = 'Hello World';
+// const input = document.querySelector('input');
+// input.value = 'Hello World';
 
-const submit = document.querySelector('input[type="submit"]');
-submit.value = 'SEND'
+// const submit = document.querySelector('input[type="submit"]');
+// submit.value = 'SEND'
 
-const item = document.querySelector('.list-group-item');
-item.style.color = 'red';
+// const item = document.querySelector('.list-group-item');
+// item.style.color = 'red';
 
-const lastItem = document.querySelector('.list-group-item:last-child');
-lastItem.style.color = 'blue';  
+// const lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue';  
 
-const secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.backgroundColor = 'green';  
+// const secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.backgroundColor = 'green';  
 
-const thirdItem = document.querySelector('.list-group-item:nth-child(3)');
-thirdItem.style.visibility = 'hidden';  
+// const thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+// thirdItem.style.visibility = 'hidden';  
 
 
 // querySelectorAll 
