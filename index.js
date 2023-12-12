@@ -15,6 +15,7 @@ function addItem(e) {
 
     // Get input value
     const newItem = document.getElementById('item').value;
+    const newItemDescription = document.getElementById('description').value;
 
     // Create new li element
     const li = document.createElement('li');
@@ -24,9 +25,11 @@ function addItem(e) {
 
     // add text node
     const textNode = document.createTextNode(newItem);
+    const textNodeDescription = document.createTextNode(newItemDescription);
     
     // append 
     li.appendChild(textNode);
+    li.appendChild(textNodeDescription);
 
     // Create del button element
     const del = document.createElement('button');
@@ -69,10 +72,12 @@ function filterItems(e) {
     // convert to an array
     Array.from(items).forEach(function(item){
         const itemName = item.firstChild.textContent;
-        if (itemName.toLowerCase().indexOf(text) != -1) {
+        const descriptionName = item.childNodes[1].textContent;
+        if (itemName.toLowerCase().indexOf(text) != -1 || descriptionName.toLowerCase().indexOf(text) != -1) {
             item.style.display = 'block';
         } else {
             item.style.display = 'none';
         }
+
     })
 }
